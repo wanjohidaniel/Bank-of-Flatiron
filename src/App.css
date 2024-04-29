@@ -1,38 +1,80 @@
+/* App.css */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start; /* Align everything to the left */
+  justify-content: flex-start; /* Align everything to the top */
+  height: 100vh; /* Ensure the container takes the full height of the viewport */
+}
+
+header {
+  text-align: center; /* Align header text to the center */
+  width: 100%; /* Ensure header takes full width */
+  padding: 20px 0; /* Add some padding to top and bottom */
+  background-color: #f0f0f0; /* Add background color to the header */
+  background-color: blueviolet;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  margin-top: 20px; /* Add margin to separate header and main content */
+  align-self: center; /* Center main content */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
 }
+
+.main-content {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start; /* Center children horizontally */
+}
+
+/* Styles for the table */
+.transaction-table {
+  width: 80%; /* Set the table width */
+  border-collapse: collapse; /* Collapse border spacing */
+  margin-top: 20px; /* Add margin to the top */
+}
+
+/* Styles for table header row */
+.transaction-table th {
+  border: 1px solid black; /* Add borders to table headers */
+  padding: 8px; /* Add padding */
+}
+
+/* Styles for table body row */
+.transaction-table td {
+  border: 1px solid black; /* Add borders to table cells */
+  padding: 12px; /* Add padding */
+}
+
+/* Styles for the search section */
+.search-section {
+  width: 100%; /* Make search section full width */
+  margin-top: 20px; /* Add margin to the top */
+  padding: 10px; /* Add padding */
+  box-sizing: border-box; /* Include padding in width calculation */
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align items vertically */
+}
+
+/* Styles for the search input */
+.search-input {
+  flex: 1; /* Take remaining space */
+  margin-right: 10px; /* Add margin to the right */
+}
+
+.search-button {
+  background-color: #007bff; /* Blue background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  padding: 8px 16px; /* Add padding */
+  cursor: pointer; /* Change cursor to pointer */
+  border-radius: 4px; /* Add border radius */
+}
+
+
